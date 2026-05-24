@@ -1,0 +1,6 @@
+This is a sample text
+And this is a sample text file
+My name is Pushkar Bhadani
+This line will also add in the sample text file
+This is a sample text added through 'with'
+This is a sample text added through 'with'
