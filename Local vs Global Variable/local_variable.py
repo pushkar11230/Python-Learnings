@@ -6,3 +6,4 @@ show_value()
 
 a = 45  # Global Variable
 show_value()
+# 
