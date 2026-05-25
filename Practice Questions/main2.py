@@ -74,18 +74,50 @@
 
 # Find Missing Numbers
 
-numbers = [1, 2, 3, 5, 6, 8, 10, 11, 12, 14]
+# numbers = [1, 2, 3, 5, 6, 8, 10, 11, 12, 14]
 
-miss_nums = []
+# miss_nums = []
 
-for num in range(1, numbers[-1]):
-    if num not in numbers:
-        miss_nums.append(num)
+# for num in range(1, numbers[-1]):
+#     if num not in numbers:
+#         miss_nums.append(num)
 
-print(miss_nums)
+# print(miss_nums)
 
 
 
 
 # Remove Duplicate Characters From String
 
+# text = "programming"
+
+# new_text = ""
+
+# for char in text:
+#     if char not in new_text:
+#         new_text += char
+    
+# print(new_text)
+
+
+
+
+
+# Create a Simple Login System
+
+users = {
+    "pushkar": "1234",
+    "admin": "abcd",
+    "laptop": "1a2b"
+}
+
+user_id = input("Enter the ID: ")
+
+if user_id in users:
+    password = input("Enter the Password: ")
+    if users[user_id] == password:
+        print("\nLogin Successful!")
+    else:
+        print("\nWrong Password!")
+else:
+    print(f"\nNo ID found as '{user_id}'")
