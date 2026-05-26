@@ -105,19 +105,81 @@
 
 # Create a Simple Login System
 
-users = {
-    "pushkar": "1234",
-    "admin": "abcd",
-    "laptop": "1a2b"
-}
+# users = {
+#     "pushkar": "1234",
+#     "admin": "abcd",
+#     "laptop": "1a2b"
+# }
 
-user_id = input("Enter the ID: ")
+# user_id = input("Enter the ID: ")
 
-if user_id in users:
-    password = input("Enter the Password: ")
-    if users[user_id] == password:
-        print("\nLogin Successful!")
+# if user_id in users:
+#     password = input("Enter the Password: ")
+#     if users[user_id] == password:
+#         print("\nLogin Successful!")
+#     else:
+#         print("\nWrong Password!")
+# else:
+#     print(f"\nNo ID found as '{user_id}'")
+
+
+
+
+# Matrix Addition
+
+# m1 = [
+#  [1, 2],
+#  [3, 4]
+# ]
+
+# m2 = [
+#  [5, 6],
+#  [7, 8]
+# ]
+
+# ''' 
+
+# m1[0][0] m1[0][1]
+# m1[1][0] m1[1][1]
+
+# m2[0][0] m2[0][1]
+# m2[1][0] m2[1][1]
+
+# '''
+
+# add = [
+#     [],
+#     []
+# ]
+
+# for i in range(len(m1)):
+#     for j in range(len(m2)):
+#         add[i].insert(j, m1[i][j] + m2[i][j])
+
+# print(add[0])
+# print(add[1])
+
+
+
+
+# Find Most Frequent Element in List
+
+numbers = [1, 2, 2, 3, 4, 2, 2, 5, 3, 3]
+
+frequency = {}
+
+for num in numbers:
+    if num not in frequency:
+        frequency[num] = 1
     else:
-        print("\nWrong Password!")
-else:
-    print(f"\nNo ID found as '{user_id}'")
+        frequency[num] += 1
+
+largest = 0
+most_frequent = None
+
+for key in frequency:
+    if frequency[key] > largest:
+        largest = frequency[key]
+        most_frequent = key
+
+print(f"Most frequent number in the list is {most_frequent} which occured {largest} times.")
